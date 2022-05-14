@@ -1,0 +1,15 @@
+#logo
+{
+    margin-right: 20px;
+    font-size:38px;
+    font-family:"ink free","Lucida Console", "Courier New",monospace ;
+}
+
+.main-container{
+    border:1px solid black;
+}
+
+a{
+    color:black;
+}
+
