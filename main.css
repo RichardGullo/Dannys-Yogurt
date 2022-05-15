@@ -101,3 +101,19 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.social img{
+    height: 40px;
+    width:40px;
+    margin:5px;
+}
+
+.footer{
+    background-color: #28B3C7;
+    height:100px;
+}
+
+.contact{
+    margin-top: auto;
+
+}
