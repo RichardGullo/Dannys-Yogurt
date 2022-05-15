@@ -1,6 +1,13 @@
 .container{
     padding:0px;
+    
 }
+
+.row{
+    margin:0;
+}
+
+
 
 #logo
 {
@@ -17,7 +24,7 @@ a{
     color:black;
 }
 
-.hero{
+.hero-section{
     height:500px;
     background-color:#79DAE8 ;
     display: flex;
@@ -26,7 +33,7 @@ a{
     position: relative;
 }
 
-.hero .secondary-background
+.hero-section .secondary-background
 {
     height:150px;
     background-color: #E8F9FD;
@@ -68,3 +75,29 @@ a{
     display: inline-block;
 }
 
+.circle{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    border:5px solid #28B3C7;
+    display:inline-block;
+}
+
+.item1{
+    background-image:url("./images/yogurts-small.png") ;
+    background-repeat: no-repeat;
+    background-size: object-fit;
+    background-position: center center;
+}
+
+.item2{
+    background-image:url("./images/sprinkles.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item3{
+    background-image:url("./images/berries.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
