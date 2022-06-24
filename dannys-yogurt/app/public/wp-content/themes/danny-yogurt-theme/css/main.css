@@ -130,15 +130,17 @@ nav a{
 }
 
 .item2{
-    background-image:url("http://dannys-yogurt.local/wp-content/themes/danny-yogurt-theme/images/sprinkles.jpg") ;
+    background-image:url("http://dannys-yogurt.local/wp-content/themes/danny-yogurt-theme/images/sprinkles.png") ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: object-fit;
+    background-position: center center;
 }
 
 .item3{
-    background-image:url("http://dannys-yogurt.local/wp-content/themes/danny-yogurt-theme/images/berries.jpg") ;
+    background-image:url("http://dannys-yogurt.local/wp-content/themes/danny-yogurt-theme/images/fruit.png") ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: object-fit;
+    background-position: center center;
 }
 
 /* Contact page */
