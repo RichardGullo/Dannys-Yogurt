@@ -12,8 +12,8 @@
 
 <!--Nav -->
 <nav class="navbar navbar-expand-sm navbar-light">
-    <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri('images/logo.svg') ?>"</a>
-    <a id="logo" href="index.html">Danny's Yogurt</a>
+    <a class="navbar-brand" href="<?php echo site_url('/home'); ?>"><img src="<?php echo get_theme_file_uri('images/logo.svg') ?>"</a>
+    <a id="logo" href="<?php echo site_url('/home'); ?>">Danny's Yogurt</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
       <span class="navbar-toggler-icon"></span>
     </button>
