@@ -61,6 +61,8 @@ nav a{
 {
     height:150px;
     background-color: #E8F9FD;
+    position: relative;
+    
 }
 
 .hero-image{
@@ -69,6 +71,7 @@ nav a{
     position:absolute;
     right:40px;;
     bottom:40px;
+    z-index: 20;
 }
 
 .hero-text{
@@ -151,6 +154,11 @@ input[type=submit]{
     font-size: 20px;
 }
 
+/* About Page */
+
+#about-us-container h2{
+    font-size: 48px;
+}
 
 /* Footer */
 
@@ -167,5 +175,43 @@ input[type=submit]{
 
 .contact{
     margin-top: auto;
+
+}
+
+@media screen and (max-width:990px) {
+    #hero-text{
+        left:50%;
+        top:0;
+        /* transform: translate(-50%,0%); */
+        transform: translate(-50%, 0px);
+        text-align: center;
+    }
+    .hero-section{
+        height:728px;
+    }
+
+    .secondary-background{
+        height: 266px !important;
+    }
+
+    #hero-image{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slider-buttons{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        bottom:auto;
+    }
+}
+
+@media screen and (max-width:570px) {
+
+    #about-us-container h2{
+        font-size: 40px;
+    }
 
 }
