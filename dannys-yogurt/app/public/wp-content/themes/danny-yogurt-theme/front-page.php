@@ -4,7 +4,7 @@
   <div class ="hero-section">
 
     <div class="hero-text" id="hero-text">
-        <h2>Vanilla Yogurt</h1>
+        <h2>Vanilla Yogurt</h2>
         <p>Yogurt with vanilla and strawberries</p>
     </div>
     <img class="hero-image" id="hero-image" src="<?php echo get_theme_file_uri('images/vanilla-yogurt2.png') ?>" />
@@ -20,37 +20,49 @@
 
   <!--Features -->
   <div class="row py-5" id="feature-container">
-      <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <div class="col-md-4">
 
-        <div>
-            <img src="<?php echo get_theme_file_uri('images/yogurts.png') ?>" style="object-fit:contain; width:300px; height:300px;" />
-            <p class="text-center">Multiple Flavors</p>
+        <div class="d-flex justify-content-center flex-column align-items-center text-center">
+            <img src="<?php echo get_theme_file_uri('images/yogurts.png') ?>" />
+            <h3>Multiple Flavors</h3>
+            <p>Large selection of flavors to choose from and add new flavors monthly.</p>
         </div>
         
-        
-
+      
       </div>
-      <div class="col-md-4 d-flex justify-content-center align-items-center ">
+      <div class="col-md-4 ">
 
-          <div>
-            <img src="<?php echo get_theme_file_uri('images/sprinkles.png') ?>" style="object-fit:contain; width:300px; height:300px;" />
-            <p class="text-center">Variety of Toppings</p>
+          <div class="d-flex justify-content-center flex-column align-items-center text-center">
+            <img src="<?php echo get_theme_file_uri('images/sprinkles.png') ?>" />
+            <h3>Variety of Toppings</h3>
+            <p>Large selection of toppings to choose from.</p>
           </div>
         
 
       </div>
-      <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <div class="col-md-4">
 
-          <div>
-            <img src="<?php echo get_theme_file_uri('images/fruit.png') ?>" style="object-fit:contain; width:300px; height:300px;" />
-            <p class="text-center">Organic Fruit</p>
+          <div class="d-flex justify-content-center flex-column align-items-center text-center">
+            <img src="<?php echo get_theme_file_uri('images/fruit.png') ?>" />
+            <h3>Organic Fruits</h3>
+            <p>Large selection of organic fruit to choose from and it is delivered fresh.</p>
           </div>
 
       </div>
   </div>
+
+  <!-- Menu Section -->
+
+  <div class="explanation-section">
+    <div class="blue-overlay"></div>
+    <div class="explanation-content">
+      <h2>Cool Off This Summer with Our Refreshing Yogurt</h2>
+      <a href="<?php echo site_url('/menu'); ?>" class="btn button">View Menu</a>
+    </div>
+  </div>
  
   <div class=" d-flex flex-column justify-content-center align-items-center pt-4" style="background-color: #E8F9FD;">
-    <h3 style="color: #28B3C7; font-weight: bold;">Subscribe to Our Newsletter </h3>
+    <h2 style="color: #28B3C7; font-weight: bold;">Subscribe to Our Newsletter </h2>
     <p>Promotions, news products, and sales. Directly to your inbox.</p>
         <form class="d-flex justify-content-center align-items-center mb-4" style="width:100%;">
           

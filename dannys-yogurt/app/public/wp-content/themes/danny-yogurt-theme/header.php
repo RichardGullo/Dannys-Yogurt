@@ -20,6 +20,7 @@
     <div class="collapse navbar-collapse" id="navbar">
       <div class="navbar-nav">
         <a class="nav-link <?php if(is_page('home')) echo "active" ?>" href="<?php echo site_url(); ?>">Home</a>
+        <a class="nav-link <?php if(is_page('menu')) echo "active" ?>" href="<?php echo site_url('/menu'); ?>">Menu</a>
         <a class="nav-link <?php if(is_page('contact-us')) echo "active" ?>" href="<?php echo site_url('/contact-us'); ?>">Contact</a>
         <a class="nav-link <?php if(is_page('about-us')) echo "active" ?>" href="<?php echo site_url('/about-us'); ?>">About</a>
       </div>

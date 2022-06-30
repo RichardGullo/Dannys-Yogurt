@@ -6,17 +6,39 @@
 }
 
 
-
-.container{
+.container-md{
     padding:0px;
     display: flex;
     flex-direction: column;
     
 }
 
+/* General  */
+
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size:30px;
+}
+
+h3{
+    font-size: 28px;
+ 
+    color:#0AA1DD;
+}
+
+
+p{
+    font-size:24px;
+}
+
 label{
     font-size: 28px;
 }
+
 
 /* Nav */
 
@@ -33,7 +55,7 @@ nav a{
     text-decoration: none;
 }
 
-/* Page Title */
+/* Page Title (shared across pages) */
 
 .page-title{
     height:100px;
@@ -121,25 +143,110 @@ nav a{
     display:inline-block;
 }
 
-.item1{
 
-    background-image:url("http://dannys-yogurt.local/wp-content/themes/danny-yogurt-theme/images/yogurts-small.png") ; 
+#feature-container img{
+    object-fit:contain;
+    width:212px;
+    height:130px; 
+    
+}
+
+/* Explanation Section   */
+.explanation-section{
+    background-color: aqua;
+    height:300px;
+    background-image:url("http://dannys-yogurt.local/wp-content/themes/danny-yogurt-theme/images/strawberry-background.png") ; 
     background-repeat: no-repeat;
-    background-size: object-fit;
+    background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    position: relative;
 }
 
-.item2{
-    background-image:url("http://dannys-yogurt.local/wp-content/themes/danny-yogurt-theme/images/sprinkles.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+.explanation-section p{
+    font-size: 28px;
 }
 
-.item3{
-    background-image:url("http://dannys-yogurt.local/wp-content/themes/danny-yogurt-theme/images/berries.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+.explanation-section h2 {
+    z-index: 100;
+    max-width: 500px;
 }
+
+.explanation-content{
+    z-index: 100;
+    text-align: center;
+}
+
+.blue-overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(28, 102, 112, 0.35);
+}
+
+
+/* Menu Page */
+
+
+.yogurt-container{
+    
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    justify-content: center;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.yogurt-card{
+    background-color: #E8F9FD;
+    max-width: 300px;
+    border-radius: 15px;
+    margin-top:50px;
+    position: relative;
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding:50px 10px;
+}
+
+.yogurt-card button{
+    margin-top: 15px;
+}
+
+.yogurt-rating img{
+    height:30px;
+    width:30px;
+    object-fit: contain;
+   
+}
+
+.product-image{
+    width:100px;
+    height:100px;
+    object-fit: contain;
+    position: absolute;
+    top:-50px;
+    left:50%;
+    transform: translate(-50%,0%);
+}
+
+.yogurt-content .yogurt-title{
+    color:#0AA1DD;
+    font-size: 24px;
+}
+
+.yogurt-content p{
+    font-size: 18px;
+    font-weight:500;
+}
+
 
 /* Contact page */
 #contact-form input[type=submit]{
@@ -156,15 +263,64 @@ input[type=submit]{
 
 /* About Page */
 
+.about-header{
+    text-align: center;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0AA1DD;
+}
+
+.mission-header{
+   
+    text-align: center;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mission-header h2{
+    color:#0AA1DD;
+    font-size: 38px;
+
+}
+
+.mission-header p{
+    font-size: 24px;
+    max-width: 400px;
+    color:black;
+}
+
+#about-us-container{
+    z-index: 100;
+}
+
 #about-us-container h2{
     font-size: 48px;
+}
+
+.black-overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+#about-us-container p{
+    font-size: 28px;
 }
 
 /* Footer */
 
 .footer{
     background-color: #28B3C7;
-    height:100px;
+    padding:10px 0px;
 }
 
 .social img{
@@ -177,6 +333,17 @@ input[type=submit]{
     margin-top: auto;
 
 }
+
+/* Components */
+.button{
+    background-color: #28B3C7;
+    color:white;
+    font-size: 24px;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+
 
 @media screen and (max-width:990px) {
     #hero-text{
@@ -210,8 +377,17 @@ input[type=submit]{
 
 @media screen and (max-width:570px) {
 
+    #about-us-container{
+        padding: 20px 0px;
+    }
     #about-us-container h2{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    #about-us-container p{
+        font-size: 20px;
+    }
+    #logo{
+        font-size: 32px;
     }
 
 }
